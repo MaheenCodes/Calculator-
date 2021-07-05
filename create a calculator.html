@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: pink;
+		
+	}
+</style>
+<body style="text-align: center;">
+
+<input type="text" id="first" placeholder="Enter first no.">
+<input type="text" id="second" placeholder="Enter second no.">
+<br><br>
+<button onclick="addition()">add</button>
+<button onclick="Subtraction()">Subtract</button>
+<button onclick="multiplication()">Multiply</button>
+<button onclick="division()">Divide</button>
+
+<h1 id="space"></h1>
+
+<script type="text/javascript">
+
+	function addition(){
+		    var a = parseInt(document.getElementById('first').value);
+		 	var b = parseInt(document.getElementById('second').value);
+		 	var space = document.getElementById('space');
+		 	space.innerHTML = a+b	 
+	}
+
+	function Subtraction(){
+		    var a = parseInt(document.getElementById('first').value);
+		 	var b = parseInt(document.getElementById('second').value);
+		 	var space = document.getElementById('space');
+		 	space.innerHTML = a-b	 
+	}
+
+
+	function multiplication(){
+		    var a = parseInt(document.getElementById('first').value);
+		 	var b = parseInt(document.getElementById('second').value);
+		 	var space = document.getElementById('space');
+		 	space.innerHTML = a*b	 
+	}
+
+
+	function division(){
+		    var a = parseInt(document.getElementById('first').value);
+		 	var b = parseInt(document.getElementById('second').value);
+		 	var space = document.getElementById('space');
+		 	space.innerHTML = a/b	 
+	}
+</script>
+
+</body>
+</html>
